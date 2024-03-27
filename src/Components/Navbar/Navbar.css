@@ -1,0 +1,62 @@
+.navbar {
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000eb;
+    padding: 4px 10%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.logo {
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: end;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+ul li :hover {
+    color: #770000;
+}
+
+ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.searchIcon {
+    margin-left: 15px;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.searchIcon a:hover {
+    color: #770000;
+}
+
+.searchIcon a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}

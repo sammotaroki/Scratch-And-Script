@@ -1,0 +1,68 @@
+.banner {
+    padding: 50px 180px;
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    color: #ebebeb;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 60%;
+}
+
+.right h3 {
+    color: #ffffff;
+}
+
+.right p {
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.bannerLogo {
+    height: 70px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.lastUpdate {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 12px 0px;
+}
+
+.period {
+    font-weight: 600;
+}
+
+.green {
+    color: #4eb801;
+    font-weight: 700;
+}
+
+.right a {
+    text-decoration: none;
+    color: #b80101;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.readme {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.arrowIcon {
+    margin-right: 10px;
+    color: #b80101;
+}

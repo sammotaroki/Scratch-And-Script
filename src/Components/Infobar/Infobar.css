@@ -1,0 +1,63 @@
+.infobar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 5%;
+    background: #f1f1f1;
+}
+
+.statItem {
+    background: #ffffff;
+    width: 280px;
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    color: #262626;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.statItem_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statItem h1 {
+    padding-top: 5px;
+}
+
+.statPer {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.legistlation {
+    color: #188226;
+}
+
+.draft {
+    color: #F4650C;
+}
+
+.nolegistlation {
+    color: #ea0303;
+}
+
+.nodata {
+    color: #000000;
+}
+
+.statItem p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.statItem span {
+    font-weight: 800;
+}

@@ -1,0 +1,47 @@
+.about {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.body {
+    width: 33vw;
+    padding: 30px 30px;
+    border-radius: 10px;
+    border: solid 2px #f8f8f8;
+}
+
+.search {
+    background: #a1b2bd;
+}
+
+.searchbox label {
+    font-size: 14px;
+    color: #787878;
+}
+
+.card {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    border-bottom: 1px dotted rgba(174, 205, 226, 0.605);
+}
+
+.card div {
+    padding: 12px;
+    color: #575757;
+    padding: 0px 24px;
+
+}
+
+.card div h4 {
+    color: #000000;
+}
+
+.card div p {
+    font-size: 12px;
+}

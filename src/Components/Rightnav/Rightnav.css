@@ -1,0 +1,76 @@
+.rightnav {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    margin-top: 200px;
+    display: flex;
+    font-size: 14px;
+}
+
+.keyItems {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+    color: #606060;
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 700;
+    color: #444444;
+}
+
+.itemContent {
+    font-size: 12px;
+    color: #606060;
+}
+
+.subHeading {
+    font-size: 14px;
+    color: #444444;
+    padding: 4px 0px;
+}
+
+.keyIcon {
+    margin: 0 6px;
+}
+
+.one {
+    color: #5BAC87;
+}
+
+.two {
+    color: #DB716F;
+}
+
+.three {
+    color: #E7A160;
+}
+
+.keyData {
+    margin: 30px 0;
+    padding: 16px 8px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px #cbcbcb solid;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #cbcbcb;
+}
+
+.dataItem {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

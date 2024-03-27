@@ -1,0 +1,11 @@
+.carousel {
+    width: 100vw;
+    height: 75vh;
+}
+
+.carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5)
+}

@@ -1,0 +1,8 @@
+.regulation {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 30px;
+}

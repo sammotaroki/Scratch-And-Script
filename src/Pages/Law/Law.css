@@ -1,0 +1,15 @@
+.paragraph {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.paragraph p {
+    margin-bottom: 12px;
+}
+
+.country_img {
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
