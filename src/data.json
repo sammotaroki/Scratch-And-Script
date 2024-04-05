@@ -120,5 +120,23 @@
         "marketing": "Electronic Marketing in Cape Verde",
         "privacy": "Online Privacy in Cape Verde",
         "contacts": "Contacts of data protection officers in Cape Verde"
+    },
+    {
+        "id": 8,
+        "name": "Kenya",
+        "image": "https://th.bing.com/th/id/R.19d3ae97462909b1804aa48de38088b8?rik=bm%2fyv7UmzNhrMA&riu=http%3a%2f%2ftransithotels.co.ke%2fwp-content%2fuploads%2f2016%2f01%2fTop-10-Attractions-in-Nairobi.jpg&ehk=1IfTUvIZ9UBLZE49tSAuba5n7Jq2pnGOevuj0Dtrn9c%3d&risl=&pid=ImgRaw&r=0",
+        "law": "Article 31 of the Constitution of Kenya, 2010 guarantee the right to privacy to all persons, including the right not to have; a. Their person, home or property searched; b. their possessions seized; c. information relating to their family or private affairs unnecessarily required or revealed; or d. the privacy of their communication infringed. Data protection in Kenya stems from Article 31 (c) and (d) of the Constitution of Kenya, 2010.        The Parliament of Kenya in 2019 enacted the Data Protection Act, 2019 to give effect to the aforementioned provisions of the Constitution. Article 31 of the Constitution of Kenya, 2010 guarantee the right to privacy to all persons, including the right not to have; a. Their person, home or property searched; b. their possessions seized; c. information relating to their family or private affairs unnecessarily required or revealed; or d. the privacy of their communication infringed. Data protection in Kenya stems from Article 31 (c) and (d) of the Constitution of Kenya, 2010.        The Parliament of Kenya in 2019 enacted the Data Protection Act, 2019 to give effect to the aforementioned provisions of the Constitution.",
+        "definition": "Definition of in Cape Verde",
+        "authority": "Authorities in Cape Verde",
+        "regulation": "Regulations in Cape Verde",
+        "officers": "Data Protection Officers in Cape Verde",
+        "collection": "Collection and Procesing in Cape Verde",
+        "transfer": "Transfer in Cape Verde",
+        "security": "Data security in Cape Verde",
+        "breach": "Breach Notification in Cape Verde",
+        "enforcement": "Enforcement policies and bodies in Cape Verde",
+        "marketing": "Electronic Marketing in Cape Verde",
+        "privacy": "Online Privacy in Cape Verde",
+        "contacts": "Contacts of data protection officers in Cape Verde"
     }
 ]
