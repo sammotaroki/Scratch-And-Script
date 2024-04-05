@@ -71,7 +71,6 @@ class Law extends Component {
                                     <h2>{data.name}</h2>
                                     <p>{data.law}</p>
                                 </div>
-
                             ))
                             }
                         </div>
