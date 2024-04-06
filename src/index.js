@@ -4,15 +4,15 @@ import './index.css';
 // import './styles.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { SearchContextProvider } from './context/SearchContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SearchContextProvider>
-      <App />
-    </SearchContextProvider>
+    <App />
+    {/* <SearchContextProvider>
+      
+    </SearchContextProvider> */}
   </React.StrictMode>
 );
 

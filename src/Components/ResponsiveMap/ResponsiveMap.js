@@ -492,7 +492,7 @@ const ResponsiveMap = () => {
 
     useEffect(() => {
         const handlePathClick = (event) => {
-            const country = getCountriesData.find(item => item.country === event.target.id);
+            const country = countries_data.find(item => item.country === event.target.id);
             window.location.href = country.url;
 
         };
@@ -514,7 +514,7 @@ const ResponsiveMap = () => {
     
 
     const handlePathHover = (event) => {
-        const country = getCountriesData.find(item => item.country === event.target.id);
+        const country = countries_data.find(item => item.country === event.target.id);
         
 
         if (country != undefined) {
@@ -547,7 +547,7 @@ const ResponsiveMap = () => {
 
     const handleMouseLeave = (event) => {
         console.log('we have left: ' + event.target.id);
-        const country = getCountriesData.find(item => item.country === event.target.id);
+        const country = countries_data.find(item => item.country === event.target.id);
         
 
         if (country != undefined) {
@@ -567,7 +567,7 @@ const ResponsiveMap = () => {
     };
 
     const getPathFillColor = (id) => {
-        const country = getCountriesData.find(item => item.country === id);
+        const country = countries_data.find(item => item.country === id);
         if (country === undefined) {
             return '#4CBEE4';
 
