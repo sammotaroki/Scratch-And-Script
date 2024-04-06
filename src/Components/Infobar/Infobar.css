@@ -1,10 +1,11 @@
 .infobar {
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 5%;
     background: #f1f1f1;
+    overflow: auto;
 }
 
 .statItem {
@@ -19,9 +20,10 @@
 }
 
 .statItem_body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 10px;
+    text-align: center;
     align-items: center;
 }
 

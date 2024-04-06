@@ -1,0 +1,39 @@
+.exceptionSuccess {
+    width: 20%;
+    background-color: rgba(10, 202, 58, 0.767);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    float: right;
+    z-index: 1000;
+}
+
+.exceptionWarning {
+    width: 30%;
+    background-color: rgba(221, 217, 5, 0.781);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    float: right;
+    z-index: 1000;
+}
+
+.exceptionError{
+    width: 30%;
+    background-color: rgba(236, 4, 4, 0.678);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    float: right;
+    z-index: 1000;
+}
+
+.exceptionTitle {
+    padding-bottom: 10px;
+    border-bottom: solid 0.1px rgba(128, 128, 128, 0.774);
+}
+
+
+.exceptionMessage {
+    padding-top: 15px;
+}

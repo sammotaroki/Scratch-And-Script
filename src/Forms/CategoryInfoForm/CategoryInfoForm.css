@@ -1,0 +1,46 @@
+.categoryForm {
+    width: 100%;
+    overflow: auto;
+
+}
+
+
+.selectDetailsRow {
+    width: 100%;
+}
+
+
+#selectCountry {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+}
+
+#selectCategory{
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+}
+
+.detailsRow{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+#categoryInfo {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+
+}
+#categoryEditor {
+    height: 400px;
+}
+
+.ck-editor__editable {
+    min-height: 500px;
+    max-height: 700px;
+}

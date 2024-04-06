@@ -1,5 +1,18 @@
 .midsection {
-    display: flex;
-    padding: 30px;
-    align-items: center;
+    width: 100%;
+    height: 750px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.navigation {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.mapView {
+    width: 75%;
+    height: 100%;
+    float: right;
 }

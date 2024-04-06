@@ -1,32 +1,36 @@
 .map_container {
-    display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
 }
 
 .map {
-    width: 40vw;
-    height: 88vh;
+    width: 60%;
+    /* height: 60.5vh; */
+    height: 100%;
     border: 1px solid #d0d0d0;
     display: flex;
     justify-content: center;
     margin-left: 30px;
+    float: left;
 }
 
 .info_div {
-    width: 28vw;
+    width: 28%;
     padding: 0px 12px;
     border-top: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    float: right;
 }
 
 .info_content {
     margin-bottom: 12px;
     border: 1px solid #d9d9d9;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 12px;
     color: #3f3f3f;
     letter-spacing: 1px;
@@ -35,7 +39,7 @@
 .info_content div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -57,3 +61,24 @@
 .flag {
     margin-bottom: 0px;
 }
+
+#mypopup {
+    width: 15em;
+    padding: 1.3em;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    background-color: rgb(40, 39, 146);
+    border-radius: 6px;
+    position: absolute;
+    display: none;
+  }
+  
+  #mypopup::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    left: -6px;
+    top: 68px;
+  }

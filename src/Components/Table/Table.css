@@ -1,0 +1,79 @@
+.tableComponent {
+    width: 100%;
+    margin-top: 20px;
+    overflow: auto;
+
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    visibility: visible;
+}
+
+.pagination li {
+    font-size: 25px;
+    color:#000000;
+    display: inline;
+    padding: 10px;
+    border:1px solid lightblue;
+    border-radius: 5px;
+}
+
+
+.pagination a {
+    font-size: 25px;
+    color:#448ee4;
+    display: inline;
+    padding: 10px;
+}
+
+table{
+    width: 100%;
+    border : 1px solid #000000;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tableComponent th, td {
+    padding: 5px;
+    border : 1px solid #000000;
+}
+
+.tableComponent td {
+    text-align: center;
+}
+
+.tableComponent td .actionIcons {
+    text-align: left !important;
+}
+
+#editDiv {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+#editIcon {
+    /* width: 100%;
+    height: 100%; */
+    color: blue;
+}
+
+#deleteDiv {
+    width: 50%;
+    text-align: center;
+    float: right;
+}
+
+#deleteIcon {
+    /* width: 100%;
+    height: 100%;     */
+    color: red
+}
+
+#htmlDiv {
+    max-height: 65px;
+    overflow: hidden;
+}

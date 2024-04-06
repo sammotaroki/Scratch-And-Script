@@ -1,0 +1,80 @@
+#legislatureType{
+    width:50%;
+    margin-top: 10px;
+    border-bottom: grey solid 1px;
+    float: left;
+}
+
+#legislatureProtection {
+    width:50%;
+    margin-top: 10px;
+    border-bottom: grey solid 1px;
+    float: right;
+}
+
+#categories{
+    width:50%;
+    margin-top: 10px;
+    float: left;
+}
+
+.legislatureRow{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.categoryRow{
+    width: 100%;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+#categoryName {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+}
+
+#categoryIcon {
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    float: right;
+}
+
+.countryLegislatureRow{
+    width: 100%;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+#countryLegisName {
+    width: 25%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+}
+
+#countrySelect {
+    width: 25%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+}
+
+#legisTypeSelect {
+    width: 25%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+}
+
+#legisProtectionSelect {
+    width: 25%;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+}

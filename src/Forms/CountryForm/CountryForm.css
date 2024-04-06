@@ -1,0 +1,21 @@
+.countryForm {
+    margin: 5px;
+    padding: 5px;
+    width:100%;
+    border-bottom: grey solid 1px;
+    overflow: auto;
+}
+
+.formElemnt {
+    width: 33%;
+    float: left;
+    margin-top: 5px;
+}
+
+.formSuffix {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    float: left;
+    padding-bottom: 10px;
+}
