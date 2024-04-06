@@ -7,19 +7,11 @@ import { GetCountries } from '../../services/CountryServices';
 const ResponsiveMap = () => {
     const [infoData, setInfoData] = useState('');
 
-    // const getCountriesData = async (countryData) => {
-    //     let countries_data = {};
 
-    // countries_data = await GetCountries(countryData);
-    //     if (countries_data) {
-    //         alert("Country Fetched Successfully");
-    //         return countries_data;
-            
-    //     }
-    // }
-    
 
-    let getCountriesData = [
+
+    let countries_data = [
+
         {
             country: "KE",
             country_name: "Kenya",
@@ -62,11 +54,11 @@ const ResponsiveMap = () => {
         },
         {
             country: "TN",
-            country_name: "Africa",
-            data_protection: 'law',
+            country_name: "Tunisia",
+            data_protection: 'draft',
             data_protection_level: 'Independant authority and law(s)',
-            capital_city: "Cairo",
-            currency: "Uganda Shilings",
+            capital_city: "Tunis",
+            currency: "Uganda Shillings",
             url: "/law"
 
         },
@@ -85,10 +77,416 @@ const ResponsiveMap = () => {
             country_name: "Angola",
             data_protection: 'draft',
             data_protection_level: 'Independant authority and law(s)',
-            capital_city: "Arusha",
-            currency: "Tanzania Shiling",
+            capital_city: "Luanda",
+            currency: "New Kwanza",
             url: "/law"
 
+        },
+        {
+            country: "BI",
+            country_name: "Burundi",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Bujumbura",
+            currency: "Burundi Franc",
+            url: "/law"
+
+        },
+        {
+            country: "BJ",
+            country_name: "Benin",
+            data_protection: 'draft',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Porto Novo",
+            currency: "Franc",
+            url: "/law"
+
+        },
+        {
+            country: "BF",
+            country_name: "Burkina Faso",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Ouagadougou",
+            currency: "Burkina Faso Franc",
+            url: "/law"
+
+        },
+        {
+            country: "BW",
+            country_name: "Botswana",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Gaborone",
+            currency: "Pula",
+            url: "/law"
+
+        },
+        {
+            country: "CF",
+            country_name: "Central African Rep.",
+            data_protection: 'no law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Bangui",
+            currency: "Franc",
+            url: "/law"
+
+        },
+        {
+            country: "CI",
+            country_name: "Côte d'Ivoire",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Yamoussoukro",
+            currency: "Franc",
+            url: "/law"
+
+        },
+        {
+            country: "CM",
+            country_name: "Cameroon",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Yaoundé",
+            currency: "Franc",
+            url: "/law"
+
+        },
+        {
+            country: "CD",
+            country_name: "Dem. Rep. Congo",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Kinshasa",
+            currency: "Congolese franc",
+            url: "/law"
+
+        },
+        {
+            country: "CG",
+            country_name: "Congo",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Brazzaville",
+            currency: "Franc",
+            url: "/law"
+
+        },
+        {
+            country: "DJ",
+            country_name: "Djibouti",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Djibouti",
+            currency: "Djibouti Franc",
+            url: "/law"
+
+        },
+        {
+            country: "ER",
+            country_name: "Eritrea",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Asmara",
+            currency: "Eritrean Nakfa",
+            url: "/law"
+
+        },
+        {
+            country: "ET",
+            country_name: "Ethiopia",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Addis Ababa",
+            currency: "Birr",
+            url: "/law"
+
+        },
+        {
+            country: "GA",
+            country_name: "Gabon",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Libreville",
+            currency: "Franc",
+            url: "/law"
+
+        },
+        {
+            country: "GH",
+            country_name: "Ghana",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Accra",
+            currency: "Cedi",
+            url: "/law"
+
+        },
+        {
+            country: "GN",
+            country_name: "Guinea",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Conakry",
+            currency: "Guinea Franc",
+            url: "/law"
+
+        },
+        {
+            country: "GM",
+            country_name: "Gambia",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Banjul",
+            currency: "Dalasi",
+            url: "/law"
+
+        },
+        {
+            country: "GW",
+            country_name: "Guinea-Bissau",
+            data_protection: 'draft',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Bissau",
+            currency: "Guinea-Bissau Peso",
+            url: "/law"
+
+        },
+        {
+            country: "GQ",
+            country_name: "Eq. Guinea",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Malabo",
+            currency: "Franc",
+            url: "/law"
+
+        },
+        {
+            country: "LR",
+            country_name: "Liberia",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Monrovia",
+            currency: "Liberian Dollar",
+            url: "/law"
+
+        },
+        {
+            country: "LY",
+            country_name: "Libya",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Tripoli",
+            currency: "Libyan Dinar",
+            url: "/law"
+        },
+        {
+            country: "LS",
+            country_name: "Lesotho",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Maseru",
+            currency: "Loti",
+            url: "/law"
+        },
+        {
+            country: "MA",
+            country_name: "Morocco",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Rabat",
+            currency: "Moroccan Dirham",
+            url: "/law"
+        },
+        {
+            country: "MG",
+            country_name: "Madagascar",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Antananarivo",
+            currency: "Malagasy Franc",
+            url: "/law"
+        },
+        {
+            country: "ML",
+            country_name: "Mali",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Bamako",
+            currency: "Malian Franc",
+            url: "/law"
+        },
+        {
+            country: "MZ",
+            country_name: "Mozambique",
+            data_protection: 'no law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Maputo",
+            currency: "Metical",
+            url: "/law"
+        },
+        {
+            country: "MR",
+            country_name: "Mauritania",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Nouakchott",
+            currency: "Ouguiya",
+            url: "/law"
+        },
+        {
+            country: "MW",
+            country_name: "Malawi",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Lilongwe",
+            currency: "Malawian Kwacha",
+            url: "/law"
+        },
+        {
+            country: "NA",
+            country_name: "Namibia",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Windhoek",
+            currency: "Namibian Dollar and Rand",
+            url: "/law"
+        },
+        {
+            country: "NE",
+            country_name: "Niger",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Windhoek",
+            currency: "Namibian Dollar and Rand",
+            url: "/law"
+        },
+        {
+            country: "NG",
+            country_name: "Nigeria",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Abuja",
+            currency: "Naira",
+            url: "/law"
+        },
+        {
+            country: "RW",
+            country_name: "Rwanda",
+            data_protection: 'draft',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Kigali",
+            currency: "Rwandan Franc",
+            url: "/law"
+        },
+        {
+            country: "EH",
+            country_name: "W. Sahara",
+            data_protection: 'no law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "No Data",
+            currency: "No data",
+            url: "/law"
+        },
+        {
+            country: "SD",
+            country_name: "Sudan",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Khartoum",
+            currency: "Sudanese pound",
+            url: "/law"
+        },
+        {
+            country: "SS",
+            country_name: "South Sudan",
+            data_protection: 'no law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Khartoum",
+            currency: "Sudanese pound",
+            url: "/law"
+        },
+        {
+            country: "SN",
+            country_name: "Senegal",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Dakar",
+            currency: "West African CFA franc",
+            url: "/law"
+        },
+        {
+            country: "SL",
+            country_name: "Sierra Leone",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Freetown",
+            currency: "Sierra Leonean leone",
+            url: "/law"
+        },
+        {
+            country: "SZ",
+            country_name: "Swaziland",
+            data_protection: 'draft',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Lilangeni",
+            currency: "Mbabane (administrative), Lobamba (legislative)",
+            url: "/law"
+        },
+        {
+            country: "TD",
+            country_name: "Chad",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "N’Djamena",
+            currency: "Central African CFA franc",
+            url: "/law"
+        },
+        {
+            country: "TG",
+            country_name: "Togo",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Lomé",
+            currency: "Central African CFA franc",
+            url: "/law"
+        },
+        {
+            country: "ZA",
+            country_name: "South Africa",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Pretoria (administrative), Bloemfontein (judicial), Cape Town (legislative)",
+            currency: "South African rand",
+            url: "/law"
+        },
+        {
+            country: "ZM",
+            country_name: "Zambia",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Lusaka",
+            currency: "Zambian kwacha",
+            url: "/law"
+        },
+        {
+            country: "ZW",
+            country_name: "Zimbabwe",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Harare",
+            currency: "Zimbabwean dollar",
+            url: "/law"
+        },
+        {
+            country: "SO",
+            country_name: "Somalia",
+            data_protection: 'law',
+            data_protection_level: 'Independant authority and law(s)',
+            capital_city: "Mogadishu",
+            currency: "Somali shilling",
+            url: "/law"
         }
     ]
 
@@ -135,6 +533,8 @@ const ResponsiveMap = () => {
         console.log("Event Target: ", country);
 
         setInfoData(country);
+
+        return '#f8f8f8';
     };
 
     const showPopup = (event) => {
@@ -170,6 +570,7 @@ const ResponsiveMap = () => {
         const country = getCountriesData.find(item => item.country === id);
         if (country === undefined) {
             return '#4CBEE4';
+
         }
         if (country !== undefined && country.data_protection === 'no law') {
             return 'red';
@@ -188,7 +589,6 @@ const ResponsiveMap = () => {
 
 
     return (
-
         <div className='map_container'>
             <div id="map" className='map'>
                 <svg
@@ -300,6 +700,24 @@ const ResponsiveMap = () => {
             </div>
             {infoData && (
                 <div id="info-div" className='info_div'>
+                    <div className='key'>
+                        <div className='draft key_element'>
+                            <div className='green cube'></div>
+                            <p>Legistlation</p>
+                        </div>
+                        <div className='legistlation key_element'>
+                            <div className='amber cube'></div>
+                            <p>Draft</p>
+                        </div>
+                        <div className='no_law key_element'>
+                            <div className='red cube'></div>
+                            <p>No law</p>
+                        </div>
+                        <div className='no_data key_element'>
+                            <div className='black cube'></div>
+                            <p>No Data</p>
+                        </div>
+                    </div>
                     <div className='info_content cname'>
                         <div className='country-name'>
                             <h2>{infoData.country_name}</h2>

@@ -1,17 +1,18 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Infobar from '../../Components/Infobar/Infobar'
-import Comparator from '../../Components/Comparator/Comparator'
 import Banner from '../../Components/Banner/Banner'
 import CarouselPage from '../../Components/Carousel/Carousel'
 import Midsection from '../../Components/Midsection/Midsection'
-import Exception from '../../Exception/Exception'
+import Partners from '../../Components/Partners/Partners'
+
 
 
 
 const Home = () => {
     return (
         <div className='container'>
+
             <div className='navbarDiv'>
                 <Navbar />
             </div>
@@ -26,7 +27,9 @@ const Home = () => {
             </div>
             <div className='bannerDiv'>
                 <Banner />
-            </div>          
+            </div> 
+            <Partners />
+
         </div>
     )
 }

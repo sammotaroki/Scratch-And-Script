@@ -33,6 +33,7 @@ const Sidebar = (selectedLink) => {
     return (
         <>
         <div className='sidenav'>
+
             <div className={checkLinkActivation("/about") && "selectedLink"}>
                 {Icon =  ioIcons["IoBookmarkOutline"]}
                 <ioIcons.IoBookmarkOutline className='icons' />

@@ -168,7 +168,6 @@ class Law extends Component {
                                     <p>{data.law}</p>
                                     
                                 </div>
-
                             ))
                             } */}
 

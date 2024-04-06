@@ -3,6 +3,8 @@ import './Navbar.css'
 import { IoMdDownload } from "react-icons/io";
 import logo from '../../assets/snscript.svg'
 
+import doc from '../../assets/example.pdf'
+
 const Navbar = () => {
     return (
         <div className='navbar'>
@@ -15,7 +17,7 @@ const Navbar = () => {
                 <li><a href='/downloads'>Analysis</a></li>
             </ul>
             <div className='searchIcon'>
-                <a href='/' ><IoMdDownload /></a>
+                <a href={doc} download='doc-document' target='_blank' rel='noreferrer'><IoMdDownload /></a>
             </div>
         </div>
     )
