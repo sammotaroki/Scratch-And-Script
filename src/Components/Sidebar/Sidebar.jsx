@@ -1,154 +1,91 @@
-import React, { Suspense, useEffect, useState } from 'react'
+import React from 'react'
 import './Sidebar.css'
-import * as ioIcons from "react-icons/io5";
-import * as giIcons from "react-icons/gi";
-import * as fiIcons from "react-icons/fi";
-import * as faIcons from "react-icons/fa";
-import * as riIcons from "react-icons/ri";
-import * as biIcons from "react-icons/bi";
-import * as tbIcons from "react-icons/tb";
-import * as mdIcons from "react-icons/md";
-import * as tiIcons from "react-icons/ti";
-import { Link, useLocation } from 'react-router-dom';
-import { GetCategories } from '../../services/CategoryServices';
+import { IoSearch, IoUmbrellaSharp } from "react-icons/io5";
+import { BsStack } from "react-icons/bs";
+import { FaRectangleList } from "react-icons/fa6";
+import { GiAfrica, GiSuitcase } from "react-icons/gi";
+import { FaBookOpen, FaBookmark } from "react-icons/fa";
+import { AiFillAlert } from "react-icons/ai";
+import { BiTransferAlt } from "react-icons/bi";
+import { RiChatPrivateFill } from "react-icons/ri";
+import { MdContacts, MdLaptopMac, MdLocalPolice, MdOutlineSecurity } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
-const Sidebar = (selectedLink) => {
-    const location = useLocation();
-    console.log(location.pathname);
-    const [categoryData, setCategories] = useState([]);
-    
-    let checkLinkActivation = (link) => {
+const handleLinkClick = (e) => {
+    e.preventDefault(); // prevent the default action
+    e.stopPropagation(); // stop the click from bubbling
 
-        if (location.pathname === link) {
-            return true;
-        }
-        return false;
-    }
+    const selectedList = e.target.closest('div');
+    const selectedLink = e.target;
+    const allLinks = selectedList.querySelectorAll('a');
+    allLinks.forEach((link) => link.classList.remove('selected'));
+    selectedLink.classList.add('selected');
+};
 
-    useEffect (() => {
-        GetCategories(0, 100000).then((data) => setCategories(data.content));
-    }, []) ;
-    let Icon ;    
-
+const Sidebar = () => {
     return (
-        <>
         <div className='sidenav'>
-
-            <div className={checkLinkActivation("/about") && "selectedLink"}>
-                {Icon =  ioIcons["IoBookmarkOutline"]}
-                <ioIcons.IoBookmarkOutline className='icons' />
-                <Link to="/about" className='links'>About</Link>
-            </div>
-            <div className={checkLinkActivation("/") && "selectedLink"}>
-                {Icon =  giIcons["GiAfrica"]}
-                <giIcons.GiAfrica className='icons' />
+            <div className='side_item selected'>
+                <GiAfrica className='icons' />
                 <Link to="/" className='links'>Africa Map</Link>
             </div>
-            {
-                categoryData.map(function(category) {
-                    Icon =  tiIcons[category.icon] ? tiIcons[category.icon] : mdIcons[category.icon]? mdIcons[category.icon] : 
-                    tbIcons[category.icon] ? tbIcons[category.icon] : biIcons[category.icon] ? biIcons[category.icon] 
-                    : riIcons[category.icon] ? riIcons[category.icon] : faIcons[category.icon] ? faIcons[category.icon] : 
-                    fiIcons[category.icon] ? fiIcons[category.icon] : giIcons[category.icon] ? giIcons[category.icon] 
-                    : ioIcons[category.icon] ? ioIcons[category.icon] : tiIcons.TiAnchor;
-                    return (
-                        <div className={checkLinkActivation(`/category/${category.id}`) && "selectedLink"}>
-                            
-                            <Suspense fallback={<></>}>
-                                <Icon className='icons'/>
-                                <Link to={`/category/${category.id}`} className='links'>{category.name}</Link>
-                            </Suspense>
-                                
-                            
-                        </div>
-                    )
-                })
-            }
-            <div className={checkLinkActivation("/contacts") && "selectedLink"}>
-                {Icon =  tiIcons["TiContacts"]}
-                <Icon className='icons' />
+            <div className='side_item'>
+                <FaBookmark className='icons' />
+                <Link to="/about" className='links'>About</Link>
+            </div>
+            <div onClick={handleLinkClick}>
+                <IoSearch className='icons' />
+                <Link to="/law" className='links'>Law</Link>
+            </div>
+            <div>
+                <FaBookOpen className='icons' />
+                <Link to="/definition" className='links'>Definition</Link>
+            </div>
+            <div>
+                <GiSuitcase className='icons' />
+                <Link to="/authority" className='links'>Authority</Link>
+            </div>
+            <div>
+                <FaRectangleList className='icons' />
+                <Link to="/regulation" className='links'>Regulation</Link>
+            </div>
+            <div>
+                <IoUmbrellaSharp className='icons' />
+                <Link to="/protectionofficers" className='links'>Data Protection Officers</Link>
+            </div>
+            <div>
+                <BsStack className='icons' />
+                <Link to="/collection" className='links'>Collection & Processing</Link>
+            </div>
+            <div>
+                <BiTransferAlt className='icons' />
+                <Link to="/transfer" className='links'>Transfer</Link>
+            </div>
+            <div>
+                <MdOutlineSecurity className='icons' />
+                <Link to="/security" className='links'>Security</Link>
+            </div>
+            <div>
+                <AiFillAlert className='icons' />
+                <Link to="/breach" className='links'>Breach Notification</Link>
+            </div>
+            <div>
+                <MdLocalPolice className='icons' />
+                <Link to="/enforcement" className='links'>Enforcement</Link>
+            </div>
+            <div>
+                <MdLaptopMac className='icons' />
+                <Link to="/marketing" className='links'>Electronic Marketing</Link>
+            </div>
+            <div>
+                <RiChatPrivateFill className='icons' />
+                <Link to="/privacy" className='links'>Online Privacy</Link>
+            </div>
+            <div>
+                <MdContacts className='icons' />
                 <Link to="/contacts" className='links'>Contacts</Link>
             </div>
-            <div className={checkLinkActivation("/setup") && "selectedLink"}>
-                {Icon =  tiIcons["TiContacts"]}
-                <Icon className='icons' />
-                <Link to="/setup" className='links'>Setups</Link>
-            </div>
-            <div className={checkLinkActivation("/category-setup") && "selectedLink"}>
-                {Icon =  ioIcons["IoSettingsOutline"]}
-                <Icon className='icons' />
-                <Link to="/category-setup" className='links'>Category Setups</Link>
-            </div>
         </div>
-            
-        
-        </>
-        // <div className='sidenav'>
-            // <div>
-            //     <IoBookmarkOutline className='icons' />
-            //     <Link to="/about" className='links'>About</Link>
-            // </div>
-            // <div>
-            //     <GiAfrica className='icons' />
-            //     <Link to="/" className='links'>Africa Map</Link>
-            // </div>
-        //     <div>
-        //         <IoSearch className='icons' />
-        //         <Link to="/law" className='links'>Law</Link>
-        //     </div>
-        //     <div>
-        //         <FiBook className='icons' />
-        //         <Link to="/definition" className='links'>Definition</Link>
-        //     </div>
-        //     <div>
-        //         <IoBriefcaseOutline className='icons' />
-        //         <Link to="/authority" className='links'>Authority</Link>
-        //     </div>
-        //     <div>
-        //         <FaRegListAlt className='icons' />
-        //         <Link to="/regulation" className='links'>Regulation</Link>
-        //     </div>
-        //     <div>
-        //         <IoUmbrellaOutline className='icons' />
-        //         <Link to="/protectionofficers" className='links'>Data Protection Officers</Link>
-        //     </div>
-        //     <div>
-        //         <RiStackLine className='icons' />
-        //         <Link to="/collection" className='links'>Collection & Processing</Link>
-        //     </div>
-        //     <div>
-        //         <BiTransfer className='icons' />
-        //         <Link to="/transfer" className='links'>Transfer</Link>
-        //     </div>
-        //     <div>
-        //         <IoLockOpenOutline className='icons' />
-        //         <Link to="/security" className='links'>Security</Link>
-        //     </div>
-        //     <div>
-        //         <TbAlertSquareRounded className='icons' />
-        //         <Link to="/breach" className='links'>Breach Notification</Link>
-        //     </div>
-        //     <div>
-        //         <GiPoliceBadge className='icons' />
-        //         <Link to="/enforcement" className='links'>Enforcement</Link>
-        //     </div>
-        //     <div>
-        //         <MdOutlineComputer className='icons' />
-        //         <Link to="/marketing" className='links'>Electronic Marketing</Link>
-        //     </div>
-        //     <div>
-        //         <MdOutlineRemoveRedEye className='icons' />
-        //         <Link to="/privacy" className='links'>Online Privacy</Link>
-        //     </div>
-            // <div>
-            //     <TiContacts className='icons' />
-            //     <Link to="/contacts" className='links'>Contacts</Link>
-            // </div>
-            // <div>
-            //     <TiContacts className='icons' />
-            //     <Link to="/setup" className='links'>Setups</Link>
-            // </div>
-        // </div>
     );
 };
 

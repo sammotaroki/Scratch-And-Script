@@ -13,6 +13,7 @@ const Partners = () => {
         <div className='partners'>
             <div className='partner_header'>
                 <h2>Our Partners</h2>
+                <span>This program is supported by: ISACA Kenya Chapter, ISACA Kampala Chapter, ISACA Rwanda Chapter, ISACA South Africa Chapter, Data Privacy and Governance Society of Kenya</span>
             </div>
             <div className='partner_content'>
                 <img src={imgPartner1} alt='partner1' className='partner_img' />

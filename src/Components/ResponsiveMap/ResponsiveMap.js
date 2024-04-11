@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './ResponsiveMap.css';
-import { GetCountries } from '../../services/CountryServices';
-
-
 
 const ResponsiveMap = () => {
     const [infoData, setInfoData] = useState('');
 
 
-
-
     let countries_data = [
-
         {
             country: "KE",
             country_name: "Kenya",
@@ -489,7 +483,6 @@ const ResponsiveMap = () => {
             url: "/law"
         }
     ]
-
     useEffect(() => {
         const handlePathClick = (event) => {
             const country = countries_data.find(item => item.country === event.target.id);
@@ -511,49 +504,16 @@ const ResponsiveMap = () => {
         };
     }, []);
 
-    
-
     const handlePathHover = (event) => {
         const country = countries_data.find(item => item.country === event.target.id);
-        
-
-        if (country != undefined) {
-            var myicon = document.getElementById(event.target.id);
-            var mypopup = document.getElementById("mypopup");
-            var iconPos = myicon.getBoundingClientRect();
-            mypopup.style.left = (iconPos.right + 35) + "px";
-            mypopup.style.top = (window.scrollY + iconPos.top - 1) + "px";
-            mypopup.style.display = "block";
-
-            
-
-
-        }
-        
-        console.log("Event Target: ", country);
 
         setInfoData(country);
 
         return '#f8f8f8';
     };
 
-    const showPopup = (event) => {
-        
-    };
-    
-    const hidePopup = (evt) => {
-        
-    };
-
     const handleMouseLeave = (event) => {
         console.log('we have left: ' + event.target.id);
-        const country = countries_data.find(item => item.country === event.target.id);
-        
-
-        if (country != undefined) {
-        var mypopup = document.getElementById("mypopup");
-        mypopup.style.display = "none";
-        }
         setInfoData({
             country: "KE",
             country_name: "Kenya",
@@ -563,7 +523,6 @@ const ResponsiveMap = () => {
             currency: "Kenya Shilling"
 
         }); // Clear the information on mouse leave
-        
     };
 
     const getPathFillColor = (id) => {
@@ -585,8 +544,6 @@ const ResponsiveMap = () => {
         }
     };
 
-    
-
 
     return (
         <div className='map_container'>
@@ -597,7 +554,7 @@ const ResponsiveMap = () => {
                     fill='#f2f2f2'
                     version="1.1"
                     id="svg2">
-                    <path id="AO" fill={getPathFillColor("AO")} data-name="Angola" data-id="AO" d="m495.3 598.6-36-.2-4.3 1.7-3.5-.3-5.1 1.9-1.1 2.7 6 8.7 2.4 9.3 3.6 13.4-3.8 5.5-.6 2.8 2.9 8.3 3.1 8.4 3.6 5 .6 7.8-1.4 10.3-4 6.1-7.1 9.1-2.9 5.6-4.1 12.5-.8 5.9-4.3 12.7-1.9 12.2 1 8.7 5.9-2.7 7.2-2.3 7.8.4 7.1 6.3 1.9-1 48.8-.6 8.2 6.6 29.1 2 22.4-5.7-7.6-8.6-7.8-11.3 1.6-44 25.3.1-1-4.7 2-5.2-2-6.5 1.5-6.7-1.2-4.3-5.5-.8-7.6 2-5.3-.3-3 1.3.9-16.5-3.9-5.1-.8-8.5 1.9-8.4-2.4-5.3-.1-8.7-14.8.1 1.1-5-6.2.1-.7 2.4-7.6.5-3.1 8.1-1.9 3.4-6.7-1.9-4 1.9-8.1 1.1-4.6-7.2-2.7-4.5-3.5-8.3-2.9-10.3zm-47.4-2.7.4-6 2-3.5 4.5-2.9-4.6-4.8-3.7 2.3-5 6 3.3 10.4 3.1-1.5z" stroke="#646464" onMouseEnter={handlePathHover} onMouseLeave={handleMouseLeave}/>
+                    <path id="AO" fill={getPathFillColor("AO")} data-name="Angola" data-id="AO" d="m495.3 598.6-36-.2-4.3 1.7-3.5-.3-5.1 1.9-1.1 2.7 6 8.7 2.4 9.3 3.6 13.4-3.8 5.5-.6 2.8 2.9 8.3 3.1 8.4 3.6 5 .6 7.8-1.4 10.3-4 6.1-7.1 9.1-2.9 5.6-4.1 12.5-.8 5.9-4.3 12.7-1.9 12.2 1 8.7 5.9-2.7 7.2-2.3 7.8.4 7.1 6.3 1.9-1 48.8-.6 8.2 6.6 29.1 2 22.4-5.7-7.6-8.6-7.8-11.3 1.6-44 25.3.1-1-4.7 2-5.2-2-6.5 1.5-6.7-1.2-4.3-5.5-.8-7.6 2-5.3-.3-3 1.3.9-16.5-3.9-5.1-.8-8.5 1.9-8.4-2.4-5.3-.1-8.7-14.8.1 1.1-5-6.2.1-.7 2.4-7.6.5-3.1 8.1-1.9 3.4-6.7-1.9-4 1.9-8.1 1.1-4.6-7.2-2.7-4.5-3.5-8.3-2.9-10.3zm-47.4-2.7.4-6 2-3.5 4.5-2.9-4.6-4.8-3.7 2.3-5 6 3.3 10.4 3.1-1.5z" stroke="#646464" onMouseEnter={handlePathHover} onMouseLeave={handleMouseLeave} />
 
                     <path id="BI" fill={getPathFillColor("BI")} data-name="Burundi" data-id="BI" d="m669 556.1-.6-5.4-6.5-.9-3.8 7.9-7.4-1.1 3 6.3.1 2.4 4.3 13.2v.6l1.2-.2 4.5-5 4.9-7.2 3-2.9-.1-4.5-2.6-3.2z" stroke="#646464" onMouseEnter={handlePathHover} onMouseLeave={handleMouseLeave} />
 
@@ -744,19 +701,8 @@ const ResponsiveMap = () => {
                     </div>
                 </div>
             )}
-            {infoData && 
-                <div id="mypopup">
-                    <h3>Country: {infoData.country_name}</h3>
-                    <h3>Capital: {infoData.capital_city}</h3>
-                </div>
-            }
-            
         </div>
-
-        
     );
 };
-
-
 
 export default ResponsiveMap;

@@ -8,28 +8,15 @@ import Partners from '../../Components/Partners/Partners'
 
 
 
-
 const Home = () => {
     return (
         <div className='container'>
-
-            <div className='navbarDiv'>
-                <Navbar />
-            </div>
-            <div className='carouselDiv'>
-                <CarouselPage />
-            </div>
-            <div className='infobarDiv'>
-                <Infobar />
-            </div>
-            <div className='midSectDiv'>
-                <Midsection />
-            </div>
-            <div className='bannerDiv'>
-                <Banner />
-            </div> 
+            <Navbar />
+            <CarouselPage />
+            <Infobar />
+            <Midsection />
             <Partners />
-
+            <Banner />
         </div>
     )
 }

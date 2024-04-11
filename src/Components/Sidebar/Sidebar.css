@@ -1,7 +1,7 @@
 .sidenav {
-    width: 100%;
+    width: 25vw;
+    height: 630px;
     display: flex;
-    height: 100%;
     flex-direction: column;
     color: #ffffff;
     font-size: 14px;
@@ -28,17 +28,11 @@
     border-left: 6px solid #9F0000;
 }
 
-.selectedLink {
-    background: #000000 !important;
-    color: #ffffff;
-}
-
 .links {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
-    forced-color-adjust: calc(0.5 * #ffffff + 0.5 * #494949);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .links:hover {

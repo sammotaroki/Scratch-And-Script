@@ -8,13 +8,8 @@ import ResponsiveMap from '../ResponsiveMap/ResponsiveMap.js'
 const Midsection = () => {
     return (
         <div className='midsection'>
-            <div className='navigation'>
-                <Sidebar />
-            </div>
-            <div className='mapView'>
-                <ResponsiveMap />
-            </div>
-            
+            <Sidebar />
+            <ResponsiveMap />
             {/* <Rightnav /> */}
         </div>
     )
