@@ -3,6 +3,8 @@ import Navbar from '../../Components/Navbar/Navbar'
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import { CountryDropdown } from 'react-country-region-selector';
 import Data from '../../data.json'
+import Partners from '../../Components/Partners/Partners';
+import Banner from '../../Components/Banner/Banner';
 
 class Transfer extends Component {
     constructor(props) {
@@ -66,6 +68,8 @@ class Transfer extends Component {
                         </div>
                     </div>
                 </div>
+                <Partners />
+                <Banner />
             </div>
         )
     }

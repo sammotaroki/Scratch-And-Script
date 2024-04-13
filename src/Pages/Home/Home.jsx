@@ -5,18 +5,33 @@ import Banner from '../../Components/Banner/Banner'
 import CarouselPage from '../../Components/Carousel/Carousel'
 import Midsection from '../../Components/Midsection/Midsection'
 import Partners from '../../Components/Partners/Partners'
+import MidsectionHeader from '../../Components/MidsectionHeader/MidsectionHeader'
+
 
 
 
 const Home = () => {
     return (
         <div className='container'>
-            <Navbar />
-            <CarouselPage />
-            <Infobar />
-            <Midsection />
+
+            <div className='navbarDiv'>
+                <Navbar />
+            </div>
+            <div className='carouselDiv'>
+                <CarouselPage />
+            </div>
+            <div className='infobarDiv'>
+                <Infobar />
+            </div>
+            <MidsectionHeader />
+            <div className='midSectDiv'>
+                <Midsection />
+            </div>
             <Partners />
-            <Banner />
+            <div className='bannerDiv'>
+                <Banner />
+            </div>
+
         </div>
     )
 }

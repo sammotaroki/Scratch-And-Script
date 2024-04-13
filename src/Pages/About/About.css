@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 30px;
+    margin-bottom: 100px;
 }
 
 .body {
@@ -31,17 +32,25 @@
     border-bottom: 1px dotted rgba(174, 205, 226, 0.605);
 }
 
-.card div {
+.name_country {
     padding: 12px;
     color: #575757;
     padding: 0px 24px;
 
 }
 
-.card div h4 {
+.name_country h4 {
     color: #000000;
 }
 
-.card div p {
+.name_country p {
     font-size: 12px;
+}
+
+.img-container {
+    border-radius: 50%;
+}
+
+.card_img {
+    border-radius: 50%;
 }

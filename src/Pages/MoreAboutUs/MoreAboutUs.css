@@ -1,0 +1,65 @@
+.dark {
+    background: #ffffff;
+
+}
+
+.more {
+    margin-top: 5%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more_body {
+    color: #000000;
+    width: 100vw;
+    height: 630px;
+    padding: 3%;
+    border-radius: 10px;
+    border: solid 2px #f8f8f8;
+    background: #f9f9f9;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.intro {
+    padding-bottom: 1%;
+}
+
+.sub_heading {
+    padding: 1% 0;
+}
+
+.parag {
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.testimonials {
+    padding: 0 18%;
+    margin-bottom: 3%;
+}
+
+.testimonials h3 {
+    text-align: center;
+    color: #373737;
+}
+
+.testimonials p {
+    color: #494949;
+    padding: 8px 0;
+    letter-spacing: 1px;
+}
+
+.slider-container {
+    padding-top: 1%;
+}
+
+.tcard {
+    height: 60px;
+}
+
+.imgrw {
+    width: 40%;
+    object-fit: cover;
+}

@@ -2,6 +2,18 @@ import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import './About.css'
+import Partners from '../../Components/Partners/Partners'
+import Banner from '../../Components/Banner/Banner'
+import photo1 from '../../assets/Ann Noel Akoth.jpeg'
+import photo2 from '../../assets/georginagiathi.jpeg'
+import photo3 from '../../assets/elsiedulo.jpeg'
+import photo4 from '../../assets/adwets.jpeg'
+import photo5 from '../../assets/isabelkirabo.jpeg'
+import photo6 from '../../assets/adegbajuemmanuel.jpeg'
+import photo7 from '../../assets/gideonmutai.jpeg'
+import photo8 from '../../assets/joshuaokemwa.jpeg'
+import photo9 from '../../assets/gusongoiryebrian.jpeg'
+import photo10 from '../../assets/naomiemma.jpeg'
 
 
 
@@ -16,90 +28,106 @@ const About = () => {
                 <Sidebar />
                 <div className='body'>
                     <div className='card'>
-                        <img className='card_img' src='https://cdn4.iconfinder.com/data/icons/people-avatar-1-3/512/821-11-512.png' />
-                        <div>
-                            <h4>Dave Kelly</h4>
-                            <p>Algeria</p>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo1} alt='person1' />
                         </div>
 
+                        <div className='name_country'>
+                            <h4>Ann Noel Akoth</h4>
+                            <p>Kenya</p>
+                        </div>
                     </div>
                     <div className='card'>
-                        <img className='card_img' src='https://cdn4.iconfinder.com/data/icons/people-avatar-1-3/512/821-24-512.png' />
-                        <div>
-                            <h4>Nancy Holmes</h4>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo5} alt='person5' />
+                        </div>
+                        <div className='name_country'>
+                            <h4>Isabel Kirabo</h4>
                             <p>Togo</p>
                         </div>
-
                     </div>
                     <div className='card'>
-                        <img className='card_img' src='https://cdn1.iconfinder.com/data/icons/business-avatar-circle/64/07_avatar_people_man_bald_beard_glasses_business_businessman_man_male-512.png' />
-                        <div>
-                            <h4>Mike Namaih</h4>
-                            <p>Uganda</p>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo2} alt='person2' />
                         </div>
-
+                        <div className='name_country'>
+                            <h4>Georgina Giathi</h4>
+                            <p>Kenya</p>
+                        </div>
                     </div>
                     <div className='card'>
-                        <img className='card_img' src='https://cdn1.iconfinder.com/data/icons/business-avatar-circle/64/17_avatar_people_woman_business_businesswoman_woman_female_glasses_long_hair-512.png' />
-                        <div>
-                            <h4>Jane Dorothy</h4>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo3} alt='person3' />
+                        </div>
+                        <div className='name_country'>
+                            <h4>Elsie Dulo</h4>
                             <p>Egypt</p>
                         </div>
-
                     </div>
                     <div className='card'>
-                        <img className='card_img' src='https://cdn1.iconfinder.com/data/icons/business-avatar-circle/64/19_avatar_people_business_businesswoman_woman_female_short_hair_glasses-512.png' />
-                        <div>
-                            <h4>Nancy Jerico</h4>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo4} alt='person1' />
+                        </div>
+                        <div className='name_country'>
+                            <h4>Esther Adwets</h4>
                             <p>Mali</p>
                         </div>
-
                     </div>
                 </div>
 
                 <div className='body'>
                     <div className='card'>
-                        <img className='card_img' src='https://cdn4.iconfinder.com/data/icons/job-avatar/512/Job_Avatar-18-512.png' />
-                        <div>
-                            <h4>Barbara Adison</h4>
-                            <p>South Africa</p>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo6} alt='person6' />
+                        </div>
+                        <div className='name_country'>
+                            <h4>Adegbaju Adeola Emmanuel</h4>
+                            <p>Mali</p>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo7} alt='person7' />
+                        </div>
+                        <div className='name_country'>
+                            <h4>Gideon Mutai</h4>
+                            <p>Mali</p>
                         </div>
 
                     </div>
                     <div className='card'>
-                        <img className='card_img' src='https://th.bing.com/th/id/OIP.PT45TOvOSvHa1yyZsnvAbQHaHa?w=512&h=512&rs=1&pid=ImgDetMain' />
-                        <div>
-                            <h4>Gafford Samuels</h4>
-                            <p>Chad</p>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo8} alt='person7' />
+                        </div>
+                        <div className='name_country'>
+                            <h4>Joshua Ayieko Okemwa</h4>
+                            <p>Mali</p>
                         </div>
 
                     </div>
                     <div className='card'>
-                        <img className='card_img' src='https://cdn3.iconfinder.com/data/icons/women-avatars/314/29-01-512.png' />
-                        <div>
-                            <h4>Wendy Bernett</h4>
-                            <p>Ghana</p>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo9} alt='person8' />
+                        </div>
+                        <div className='name_country'>
+                            <h4>Gusongoirye Brian</h4>
+                            <p>Mali</p>
                         </div>
 
                     </div>
                     <div className='card'>
-                        <img className='card_img' src='https://coffeehow.co/wp-content/uploads/2020/11/man-2-500x500.png' />
-                        <div>
-                            <h4>Ben Joseph</h4>
-                            <p>Niger</p>
+                        <div className='img-container'>
+                            <img className='card_img' src={photo10} alt='person8' />
                         </div>
-
-                    </div>
-                    <div className='card'>
-                        <img className='card_img' src='https://cdn1.iconfinder.com/data/icons/people-49/512/_rebel_woman-1024.png' />
-                        <div>
-                            <h4>Jade Parrish</h4>
-                            <p>Botswana</p>
+                        <div className='name_country'>
+                            <h4>Naomi Emma Ekwealor</h4>
+                            <p>Mali</p>
                         </div>
-
                     </div>
                 </div>
             </div>
+            <Partners />
+            <Banner />
         </div>
     )
 }

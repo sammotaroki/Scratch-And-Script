@@ -4,6 +4,8 @@ import Sidebar from '../../Components/Sidebar/Sidebar';
 import { CountryDropdown } from 'react-country-region-selector';
 import Data from '../../data.json'
 import './Breach.css'
+import Banner from '../../Components/Banner/Banner';
+import Partners from '../../Components/Partners/Partners';
 
 class Breach extends Component {
     constructor(props) {
@@ -66,6 +68,8 @@ class Breach extends Component {
                         </div>
                     </div>
                 </div>
+                <Partners />
+                <Banner />
             </div>
         )
     }

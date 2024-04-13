@@ -4,6 +4,8 @@ import Sidebar from '../../Components/Sidebar/Sidebar'
 import './Authority.css'
 import { CountryDropdown } from 'react-country-region-selector'
 import Data from '../../data.json'
+import Partners from '../../Components/Partners/Partners'
+import Banner from '../../Components/Banner/Banner'
 
 
 class Authority extends Component {
@@ -68,6 +70,8 @@ class Authority extends Component {
                         </div>
                     </div>
                 </div>
+                <Partners />
+                <Banner />
             </div>
         )
     }

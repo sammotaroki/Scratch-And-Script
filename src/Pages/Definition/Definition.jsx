@@ -4,6 +4,8 @@ import Sidebar from '../../Components/Sidebar/Sidebar'
 import './Definition.css'
 import { CountryDropdown } from 'react-country-region-selector'
 import Data from '../../data.json'
+import Banner from '../../Components/Banner/Banner';
+import Partners from '../../Components/Partners/Partners';
 
 class Definition extends Component {
     constructor(props) {
@@ -77,6 +79,8 @@ class Definition extends Component {
                         </div>
                     </div>
                 </div>
+                <Partners />
+                <Banner />
             </div>
         )
     }
