@@ -14,10 +14,15 @@ const Navbar = () => {
 
             <ul>
                 <li><a href='/about'>About</a></li>
-                <li><a href='/downloads'>Analysis</a></li>
+                <li><a href='/more'>Info</a></li>
             </ul>
             <div className='searchIcon'>
-                <a href={doc} download='doc-document' target='_blank' rel='noreferrer'><IoMdDownload /></a>
+                <div>
+                    <a href={doc} download='doc-document' target='_blank' rel='noreferrer'>Download Full Data</a>
+                </div>
+                <div className="download_icon">
+                    <IoMdDownload />
+                </div>
             </div>
         </div>
     )

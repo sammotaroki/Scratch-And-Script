@@ -1,0 +1,10 @@
+.midsectionHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 1% 0;
+}
+
+.midsectionHeader h2 {
+    color: #313131;
+}

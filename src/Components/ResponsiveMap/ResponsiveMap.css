@@ -9,7 +9,7 @@
 .map {
     width: 37vw;
     max-height: 100%;
-    border: 1px solid #d0d0d0;
+    border: 1px solid #eeeeee;
     display: flex;
     justify-content: center;
 }
@@ -33,13 +33,14 @@
     padding: 12px;
     color: #3f3f3f;
     letter-spacing: 1px;
+
 }
 
 .info_content div {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .info_content p {
@@ -48,9 +49,7 @@
     color: #000000;
 }
 
-.info_content span {
-    font-size: 120px;
-}
+.info_content span {}
 
 .cname {
     border: none;
@@ -60,6 +59,16 @@
 
 .flag {
     margin-bottom: 0px;
+}
+
+.flag span {
+    font-size: 42px;
+}
+
+.authority {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .key {

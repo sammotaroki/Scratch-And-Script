@@ -1,10 +1,12 @@
 .map {
-    height: 800px;
+    height: 100%;
     width: 50%;
     /*  background: #555555;  */
 }
 
 .mapImg {
-    height: 780px;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
     object-fit: fit;
 }
