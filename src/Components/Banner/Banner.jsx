@@ -11,10 +11,28 @@ const Banner = () => {
                 <img src={logo} alt='logo' className='bannerLogo' />
             </div>
             <div className='right'>
-                <h3>About</h3>
-                <p>Scratch and Script was developed  <span className='green'> </span> to <span className='highlight'> raise awareness about data protection </span>in Africa and motivate for policy and regulatory change that better protects the right to privacy.</p>
-                <div className='lastUpdate'>
-                    Last updated: <span className='period'>February 2024</span>
+                <div className='footerContainer'>
+                    <ul className='footerList'>
+                        <li><a className='footerLink' href=''>Our Page</a></li>
+                        <li><a className='footerLink' href=''>Become An Instructor</a></li>
+                        <li><a className='footerLink' href=''>About Us</a></li>
+                        <li><a className='footerLink' href=''>Contact Us</a></li>
+                        <li><a className='footerLink' href=''>IGNITE Program</a></li>
+                    </ul>
+                </div>
+                <div className='footerContainer'>
+                    <ul className='footerList'>
+                        <li><a href=''>Support</a></li>
+                        <li><a href=''>Careers</a></li>
+                        <li><a href=''>Blog</a></li>
+                        <li><a href=''>Help & Support</a></li>
+                    </ul>
+                </div>
+                <div className='footerContainer'>
+                    <ul className='footerList'>
+                        <li><a href=''>Others</a></li>
+                        <li><a href=''>Terms and Conditions</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

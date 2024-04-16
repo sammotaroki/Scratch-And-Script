@@ -12,9 +12,9 @@ const Navbar = () => {
                 <img src={logo} alt='' className='logo' />
             </div>
 
-            <ul>
-                <li><a href='/about'>About</a></li>
-                <li><a href='/more'>Info</a></li>
+            <ul className='navlinks'>
+                <li className='navlink'><a href='/about'>About</a></li>
+                <li className='navlink'><a href='/more'>IGNITE Program</a></li>
             </ul>
             <div className='searchIcon'>
                 <div>

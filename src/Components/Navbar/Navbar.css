@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     background: #000000;
-    padding: 4px 10%;
+    padding: 4px 4%;
     position: absolute;
     z-index: 5;
     top: 0;
@@ -18,13 +18,13 @@
     object-fit: cover;
 }
 
-ul {
+.navlinks {
     flex: 1;
     list-style: none;
     text-align: end;
 }
 
-ul li {
+.navlink{
     display: inline-block;
     margin: 10px 10px;
     font-size: 14px;
